@@ -1,0 +1,93 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+}
+h1{
+    text-align: center;
+}
+header{
+    display: flex;
+    width: 90%;
+    flex-flow: row wrap;
+    margin: auto auto;
+    align-items: center;
+}
+input{
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+}
+.add{
+    width: 20%;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 40px;
+   /* border: 1px solid blue;*/
+}
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+}
+.item-icone{
+    flex: 10%;
+    /*border: 1px solid orange;*/
+    text-align: center;
+    font-size: 2rem;
+}
+.item-nome{
+    flex: 55%;
+   /* border: 1px solid deeppink;*/
+    font-size: large;
+    font-weight: bolder;
+}
+.item-botao{
+    flex: 25%;
+    /*
+    border: 1px solid green;*/
+}
+.delete{
+    background: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+}
+.clicado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(4, 156, 42, 0.442);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+}
+.item.clicado{
+    text-decoration: line-through;
+}
